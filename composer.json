@@ -1,6 +1,6 @@
 {
     "name": "grottopress/wordpress-meta-box",
-    "description": "Set up meta box in WordPress",
+    "description": "A utility to set up meta boxes in WordPress",
     "license": "MIT",
     "homepage": "https://github.com/GrottoPress/wordpress-meta-box",
     "authors": [

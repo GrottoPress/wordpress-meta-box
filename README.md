@@ -1,6 +1,6 @@
 # WordPress Meta Box
 
-A WordPress meta box utility
+A utility to set up meta boxes in WordPress
 
 ## Usage
 
