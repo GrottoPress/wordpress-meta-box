@@ -75,7 +75,7 @@ class MyAwesomeMetaBox
             // 'callback' => function ($arg) {}, // If set, 'fields' is ignored
             // 'callbackArgs' => [], // Passed as `$arg` to 'callback' above. Required if 'callback' is set.
             // 'saveCallback' => function ($post_id, $arg) {}, // Save with this callback instead of default. Required if 'callback' is set.
-            'saveCallbackArgs' => [], // Passed as `$arg` to 'saveCallback' above.
+            // 'saveCallbackArgs' => [], // Passed as `$arg` to 'saveCallback' above.
             'fields' => [ // See https://github.com/grottopress/wordpress-field
                 [ // Field 1
                     'id' => 'my-meta-box-field-1',
