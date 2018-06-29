@@ -176,16 +176,16 @@
         },
         {
             "name": "grottopress/wordpress-field",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrottoPress/wordpress-field.git",
-                "reference": "50fa55a9fb41f6ec48334431fb164f3aeefcadd7"
+                "reference": "7a416d28a3c19d0c8130e512659d1a21e754d9e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrottoPress/wordpress-field/zipball/50fa55a9fb41f6ec48334431fb164f3aeefcadd7",
-                "reference": "50fa55a9fb41f6ec48334431fb164f3aeefcadd7",
+                "url": "https://api.github.com/repos/GrottoPress/wordpress-field/zipball/7a416d28a3c19d0c8130e512659d1a21e754d9e6",
+                "reference": "7a416d28a3c19d0c8130e512659d1a21e754d9e6",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +223,7 @@
                 "Forms",
                 "wordpress"
             ],
-            "time": "2018-03-06T15:36:12+00:00"
+            "time": "2018-06-29T21:25:55+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
