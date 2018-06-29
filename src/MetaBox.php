@@ -19,7 +19,7 @@ class MetaBox
     protected $title;
 
     /**
-     * @var string|array|\WP_Screen
+     * @var string|string[int]|\WP_Screen
      */
     protected $screen;
 
@@ -34,7 +34,7 @@ class MetaBox
     protected $priority;
 
     /**
-     * @var array
+     * @var mixed[string]
      */
     protected $fields;
 
@@ -68,6 +68,9 @@ class MetaBox
      */
     protected $nonce;
 
+    /**
+     * @param mixed[string] $args
+     */
     public function __construct(array $args)
     {
         $this->setAttributes($args);
@@ -94,6 +97,9 @@ class MetaBox
         \remove_meta_box($this->id, $this->screen, $this->context);
     }
 
+    /**
+     * @param mixed[string] $box
+     */
     public function render(WP_Post $post, array $box = [])
     {
         if (empty($fields = $box['args'])) {
@@ -103,12 +109,14 @@ class MetaBox
         $html = \wp_nonce_field(\basename(__FILE__), $this->nonce, true, false);
 
         foreach ($fields as $key => $attr) {
-            $attr['id'] = isset($attr['id'])
-                ? \sanitize_title($attr['id']) : '';
+            $attr['id'] = isset($attr['id']) ?
+                \sanitize_title($attr['id']) :
+                '';
             $attr['name'] = empty($attr['name']) ? $attr['id'] : $attr['name'];
             $attr['value'] = \get_post_meta($post->ID, $attr['id']);
-            $attr['value'] = (1 === \count($attr['value'])
-                ? $attr['value'][0] : $attr['value']);
+            $attr['value'] = (\count($attr['value']) < 2) ?
+                ($attr['value'][0] ?? '') :
+                $attr['value'];
 
             $html .= $this->field($attr)->render();
         }
@@ -139,11 +147,13 @@ class MetaBox
         }
 
         foreach ($this->fields as $key => $attr) {
-            $attr['id'] = isset($attr['id'])
-                ? \sanitize_title($attr['id']) : '';
+            $attr['id'] = isset($attr['id']) ?
+                \sanitize_title($attr['id']) :
+                '';
 
-            $content = isset($_POST[$attr['id']])
-                ? (array)$_POST[$attr['id']] : [];
+            $content = isset($_POST[$attr['id']]) ?
+                (array)$_POST[$attr['id']] :
+                [];
 
             \delete_post_meta($post_id, $attr['id']);
 
@@ -195,6 +205,9 @@ class MetaBox
         return true;
     }
 
+    /**
+     * @param mixed[string] $args
+     */
     private function setAttributes(array $args)
     {
         if (!($vars = \get_object_vars($this))) {
@@ -226,6 +239,9 @@ class MetaBox
         ) ? $this->priority : null);
     }
 
+    /**
+     * @param mixed[string] $args
+     */
     private function field(array $args): Field
     {
         return new Field($args);
