@@ -109,12 +109,14 @@ class MetaBox
         $html = \wp_nonce_field(\basename(__FILE__), $this->nonce, true, false);
 
         foreach ($fields as $key => $attr) {
-            $attr['id'] = isset($attr['id'])
-                ? \sanitize_title($attr['id']) : '';
+            $attr['id'] = isset($attr['id']) ?
+                \sanitize_title($attr['id']) :
+                '';
             $attr['name'] = empty($attr['name']) ? $attr['id'] : $attr['name'];
             $attr['value'] = \get_post_meta($post->ID, $attr['id']);
-            $attr['value'] = (\count($attr['value']) < 2
-                ? ($attr['value'][0] ?? '') : $attr['value']);
+            $attr['value'] = (\count($attr['value']) < 2) ?
+                ($attr['value'][0] ?? '') :
+                $attr['value'];
 
             $html .= $this->field($attr)->render();
         }
@@ -145,11 +147,13 @@ class MetaBox
         }
 
         foreach ($this->fields as $key => $attr) {
-            $attr['id'] = isset($attr['id'])
-                ? \sanitize_title($attr['id']) : '';
+            $attr['id'] = isset($attr['id']) ?
+                \sanitize_title($attr['id']) :
+                '';
 
-            $content = isset($_POST[$attr['id']])
-                ? (array)$_POST[$attr['id']] : [];
+            $content = isset($_POST[$attr['id']]) ?
+                (array)$_POST[$attr['id']] :
+                [];
 
             \delete_post_meta($post_id, $attr['id']);
 
