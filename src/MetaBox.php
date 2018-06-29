@@ -107,8 +107,8 @@ class MetaBox
                 ? \sanitize_title($attr['id']) : '';
             $attr['name'] = empty($attr['name']) ? $attr['id'] : $attr['name'];
             $attr['value'] = \get_post_meta($post->ID, $attr['id']);
-            $attr['value'] = (1 === \count($attr['value'])
-                ? $attr['value'][0] : $attr['value']);
+            $attr['value'] = (\count($attr['value']) < 2
+                ? ($attr['value'][0] ?? '') : $attr['value']);
 
             $html .= $this->field($attr)->render();
         }
