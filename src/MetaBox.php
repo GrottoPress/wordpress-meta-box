@@ -44,7 +44,7 @@ class MetaBox
     protected $callback;
 
     /**
-     * @var array $callbackArgs Callback args to pass to `add_meta_box()`
+     * @var mixed[mixed] $callbackArgs Callback args to pass to `add_meta_box()`
      */
     protected $callbackArgs = [];
 
@@ -227,6 +227,7 @@ class MetaBox
         $this->id = \sanitize_title($this->id);
         $this->title = \sanitize_text_field($this->title);
         $this->fields = (array)$this->fields;
+        $this->callbackArgs = (array)$this->callbackArgs;
 
         $this->context = (\in_array($this->context, [
             'normal',
