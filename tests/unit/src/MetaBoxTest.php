@@ -52,7 +52,7 @@ class MetaBoxTest extends AbstractTestCase
             'post',
             'side',
             'low',
-            $callback ? ['a', 'b', 'c'] : [['id' => 'sample-meta-box-field-1']],
+            ['a', 'b', 'c', 'fields' => [['id' => 'sample-meta-box-field-1']]],
         ]);
     }
 

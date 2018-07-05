@@ -44,9 +44,9 @@ class MetaBox
     protected $callback;
 
     /**
-     * @var mixed $callbackArgs Callback args to pass to `add_meta_box()`
+     * @var array $callbackArgs Callback args to pass to `add_meta_box()`
      */
-    protected $callbackArgs;
+    protected $callbackArgs = [];
 
     /**
      * @var callable $saveCallback Callback to save post meta
@@ -77,6 +77,7 @@ class MetaBox
         $this->sanitizeAttributes();
 
         $this->nonce = "_wpnonce-{$this->id}";
+        $this->callbackArgs['fields'] = $this->fields;
     }
 
     public function add()
@@ -88,7 +89,7 @@ class MetaBox
             $this->screen,
             $this->context,
             $this->priority,
-            ($this->callback ? $this->callbackArgs : $this->fields)
+            $this->callbackArgs
         );
     }
 
@@ -102,7 +103,7 @@ class MetaBox
      */
     public function render(WP_Post $post, array $box = [])
     {
-        if (empty($fields = $box['args'])) {
+        if (empty($fields = $box['args']['fields'])) {
             return;
         }
 
