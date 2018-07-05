@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04c8275b75a8e52eb143b18823ef74ae",
+    "content-hash": "67cfe2ce618ffe2be5179485b72aaed5",
     "packages": [
         {
             "name": "aura/html",
@@ -125,16 +125,16 @@
         },
         {
             "name": "grottopress/form-field",
-            "version": "0.5.0",
+            "version": "0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrottoPress/form-field.git",
-                "reference": "3eaaa6cd31c5a22fa1432def1440f414cd282289"
+                "reference": "22d455a671f00ff8c3ffcaf72a33d9916ec6283a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrottoPress/form-field/zipball/3eaaa6cd31c5a22fa1432def1440f414cd282289",
-                "reference": "3eaaa6cd31c5a22fa1432def1440f414cd282289",
+                "url": "https://api.github.com/repos/GrottoPress/form-field/zipball/22d455a671f00ff8c3ffcaf72a33d9916ec6283a",
+                "reference": "22d455a671f00ff8c3ffcaf72a33d9916ec6283a",
                 "shasum": ""
             },
             "require": {
@@ -172,24 +172,24 @@
                 "Forms",
                 "html"
             ],
-            "time": "2018-03-06T14:08:20+00:00"
+            "time": "2018-07-05T21:06:56+00:00"
         },
         {
             "name": "grottopress/wordpress-field",
-            "version": "0.5.1",
+            "version": "0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrottoPress/wordpress-field.git",
-                "reference": "7a416d28a3c19d0c8130e512659d1a21e754d9e6"
+                "reference": "150e70771bf1953269ea9a7039da087d589cf2d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrottoPress/wordpress-field/zipball/7a416d28a3c19d0c8130e512659d1a21e754d9e6",
-                "reference": "7a416d28a3c19d0c8130e512659d1a21e754d9e6",
+                "url": "https://api.github.com/repos/GrottoPress/wordpress-field/zipball/150e70771bf1953269ea9a7039da087d589cf2d1",
+                "reference": "150e70771bf1953269ea9a7039da087d589cf2d1",
                 "shasum": ""
             },
             "require": {
-                "grottopress/form-field": "^0.5",
+                "grottopress/form-field": "^0.6",
                 "php": ">=7.0"
             },
             "require-dev": {
@@ -223,7 +223,7 @@
                 "Forms",
                 "wordpress"
             ],
-            "time": "2018-06-29T21:25:55+00:00"
+            "time": "2018-07-05T21:34:21+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1550,16 +1550,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.5.8",
+            "version": "6.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4f21a3c6b97c42952fd5c2837bb354ec0199b97b"
+                "reference": "093ca5508174cd8ab8efe44fd1dde447adfdec8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4f21a3c6b97c42952fd5c2837bb354ec0199b97b",
-                "reference": "4f21a3c6b97c42952fd5c2837bb354ec0199b97b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/093ca5508174cd8ab8efe44fd1dde447adfdec8f",
+                "reference": "093ca5508174cd8ab8efe44fd1dde447adfdec8f",
                 "shasum": ""
             },
             "require": {
@@ -1630,7 +1630,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-04-10T11:38:34+00:00"
+            "time": "2018-07-03T06:40:40+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
