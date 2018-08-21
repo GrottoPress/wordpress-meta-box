@@ -20,7 +20,7 @@ declare (strict_types = 1);
 
 namespace Vendor\Package;
 
-use GrottoPress\WordPress\MetaBox\MetaBox;
+use GrottoPress\WordPress\MetaBox;
 use WP_Post;
 
 class MyAwesomeMetaBox
