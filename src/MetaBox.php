@@ -1,7 +1,7 @@
 <?php
 declare (strict_types = 1);
 
-namespace GrottoPress\WordPress\MetaBox;
+namespace GrottoPress\WordPress;
 
 use GrottoPress\WordPress\Form\Field;
 use WP_Post;

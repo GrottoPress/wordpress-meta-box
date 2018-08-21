@@ -1,8 +1,9 @@
 <?php
 declare (strict_types = 1);
 
-namespace GrottoPress\WordPress\MetaBox;
+namespace GrottoPress\WordPress;
 
+use GrottoPress\WordPress\MetaBox\AbstractTestCase;
 use Codeception\Util\Stub;
 use tad\FunctionMocker\FunctionMocker;
 

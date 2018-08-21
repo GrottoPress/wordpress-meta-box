@@ -45,12 +45,12 @@
   },
   "autoload": {
     "psr-4": {
-      "GrottoPress\\WordPress\\MetaBox\\": "src/"
+      "GrottoPress\\WordPress\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "GrottoPress\\WordPress\\MetaBox\\": "tests/unit/src/"
+      "GrottoPress\\WordPress\\": "tests/unit/src/"
     }
   }
 }
