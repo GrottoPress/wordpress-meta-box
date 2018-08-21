@@ -218,7 +218,7 @@ class MetaBox
         unset($vars['nonce']);
 
         foreach ($vars as $key => $value) {
-            $this->{$key} = $args[$key] ?? '';
+            $this->{$key} = $args[$key] ?? null;
         }
     }
 
@@ -233,12 +233,12 @@ class MetaBox
             'normal',
             'side',
             'advanced'
-        ]) ? $this->context : null);
+        ]) ? $this->context : '');
 
         $this->priority = (\in_array(
             $this->priority,
             ['high', 'low']
-        ) ? $this->priority : null);
+        ) ? $this->priority : '');
     }
 
     /**
