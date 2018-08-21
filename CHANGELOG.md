@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 0.3.0 - 2018-08-21
 
 ### Changed
-- Move classes one level up the file system
+- Move classes one level up the file system for a shorter namespace
 
 ## 0.2.1 - 2018-07-05
 
