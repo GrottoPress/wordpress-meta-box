@@ -69,16 +69,16 @@
         },
         {
             "name": "grottopress/form-field",
-            "version": "0.6.3",
+            "version": "0.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrottoPress/form-field.git",
-                "reference": "206bec399b740f846a42ead9664f0488fe87a645"
+                "reference": "bc6dfaf0b900d5830ec06a49bbe8fa11cb91c7f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrottoPress/form-field/zipball/206bec399b740f846a42ead9664f0488fe87a645",
-                "reference": "206bec399b740f846a42ead9664f0488fe87a645",
+                "url": "https://api.github.com/repos/GrottoPress/form-field/zipball/bc6dfaf0b900d5830ec06a49bbe8fa11cb91c7f3",
+                "reference": "bc6dfaf0b900d5830ec06a49bbe8fa11cb91c7f3",
                 "shasum": ""
             },
             "require": {
@@ -115,20 +115,20 @@
                 "Forms",
                 "html"
             ],
-            "time": "2019-04-12T19:04:45+00:00"
+            "time": "2019-04-16T23:15:09+00:00"
         },
         {
             "name": "grottopress/wordpress-field",
-            "version": "0.8.1",
+            "version": "0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrottoPress/wordpress-field.git",
-                "reference": "8c0d1804e9520b2848fa463027af63e0622d645f"
+                "reference": "c3e9226f1ac61bcd99b3df0819608386a5937d0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrottoPress/wordpress-field/zipball/8c0d1804e9520b2848fa463027af63e0622d645f",
-                "reference": "8c0d1804e9520b2848fa463027af63e0622d645f",
+                "url": "https://api.github.com/repos/GrottoPress/wordpress-field/zipball/c3e9226f1ac61bcd99b3df0819608386a5937d0b",
+                "reference": "c3e9226f1ac61bcd99b3df0819608386a5937d0b",
                 "shasum": ""
             },
             "require": {
@@ -166,7 +166,7 @@
                 "Forms",
                 "wordpress"
             ],
-            "time": "2019-04-16T18:46:34+00:00"
+            "time": "2019-04-16T23:27:02+00:00"
         }
     ],
     "packages-dev": [
