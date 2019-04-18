@@ -39,7 +39,7 @@ class MetaBoxTest extends AbstractTestCase
                     'id' => 'sample-meta-box-field-1',
                 ],
             ],
-            'notes' => '<p>Just a super cool layout meta box example</p>',
+            'notes' => '<p>Just a super cool meta box example</p>',
         ]);
 
         $metaBox->add();
