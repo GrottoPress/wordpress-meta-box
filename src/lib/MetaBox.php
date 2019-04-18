@@ -109,15 +109,14 @@ class MetaBox
 
         $html = \wp_nonce_field(\basename(__FILE__), $this->nonce, true, false);
 
-        foreach ($fields as $key => $attr) {
-            $attr['id'] = isset($attr['id']) ?
-                \sanitize_title($attr['id']) :
-                '';
-            $attr['name'] = empty($attr['name']) ? $attr['id'] : $attr['name'];
-            $attr['value'] = \get_post_meta($post->ID, $attr['id']);
-            $attr['value'] = (\count($attr['value']) < 2) ?
-                ($attr['value'][0] ?? '') :
-                $attr['value'];
+        foreach ($fields as $attr) {
+            $attr = $this->sanitizeField($attr);
+
+            if (!empty($attr['key'])) {
+                $attr['value'] = \get_post_meta($post->ID, $attr['key']);
+                $attr['value'] = (\count($attr['value']) < 2) ?
+                    ($attr['value'][0] ?? null) : $attr['value'];
+            }
 
             $html .= $this->field($attr)->render();
         }
@@ -147,16 +146,18 @@ class MetaBox
             return;
         }
 
-        foreach ($this->fields as $key => $attr) {
-            $attr['id'] = isset($attr['id']) ?
-                \sanitize_title($attr['id']) :
-                '';
+        foreach ($this->fields as $attr) {
+            $attr = $this->sanitizeField($attr);
 
-            $content = isset($_POST[$attr['id']]) ?
-                (array)$_POST[$attr['id']] :
-                [];
+            if (empty($attr['key'])) {
+                continue;
+            }
 
-            \delete_post_meta($post_id, $attr['id']);
+            $name = \explode('[', $this->field($attr)->name)[0];
+
+            $content = (array)($_POST[$name] ?? null);
+
+            \delete_post_meta($post_id, $attr['key']);
 
             if (empty($content[0])) {
                 continue;
@@ -172,7 +173,7 @@ class MetaBox
                     $new_meta_value = \sanitize_text_field($new_meta_value);
                 }
 
-                \add_post_meta($post_id, $attr['id'], $new_meta_value);
+                \add_post_meta($post_id, $attr['key'], $new_meta_value);
             }
         }
     }
@@ -209,7 +210,7 @@ class MetaBox
     /**
      * @param mixed[string] $args
      */
-    private function setAttributes(array $args)
+    protected function setAttributes(array $args)
     {
         if (!($vars = \get_object_vars($this))) {
             return;
@@ -222,7 +223,7 @@ class MetaBox
         }
     }
 
-    private function sanitizeAttributes()
+    protected function sanitizeAttributes()
     {
         $this->id = \sanitize_title($this->id);
         $this->title = \sanitize_text_field($this->title);
@@ -239,6 +240,15 @@ class MetaBox
             $this->priority,
             ['high', 'low']
         ) ? $this->priority : '');
+    }
+
+    protected function sanitizeField(array $field): array
+    {
+        $field['id'] = \sanitize_title($field['id'] ?? '');
+        $field['key'] = \sanitize_key($field['key'] ?? $field['id']);
+        $field['name'] = ($field['name'] ?? '') ?: $field['key'];
+
+        return $field;
     }
 
     /**
