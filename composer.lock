@@ -69,20 +69,21 @@
         },
         {
             "name": "grottopress/form-field",
-            "version": "0.6.8",
+            "version": "0.6.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrottoPress/form-field.git",
-                "reference": "1a8b610d5d6408db1263e1666a75604a234e6cdf"
+                "reference": "fa79f9d2aa5e1b70c9f39846b627f241dea72cc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrottoPress/form-field/zipball/1a8b610d5d6408db1263e1666a75604a234e6cdf",
-                "reference": "1a8b610d5d6408db1263e1666a75604a234e6cdf",
+                "url": "https://api.github.com/repos/GrottoPress/form-field/zipball/fa79f9d2aa5e1b70c9f39846b627f241dea72cc5",
+                "reference": "fa79f9d2aa5e1b70c9f39846b627f241dea72cc5",
                 "shasum": ""
             },
             "require": {
                 "aura/html": "^2.5",
+                "grottopress/getter": "^0.3.7",
                 "php": ">=7.0"
             },
             "require-dev": {
@@ -115,7 +116,56 @@
                 "Forms",
                 "html"
             ],
-            "time": "2019-04-18T15:14:24+00:00"
+            "time": "2019-04-18T19:12:54+00:00"
+        },
+        {
+            "name": "grottopress/getter",
+            "version": "0.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrottoPress/getter.git",
+                "reference": "d5ce48577fc8f32618a337ca7316d23816fa1db0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrottoPress/getter/zipball/d5ce48577fc8f32618a337ca7316d23816fa1db0",
+                "reference": "d5ce48577fc8f32618a337ca7316d23816fa1db0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GrottoPress\\Getter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "GrottoPress.com",
+                    "email": "info@grottopress.com",
+                    "homepage": "https://www.grottopress.com"
+                },
+                {
+                    "name": "N Atta Kusi Adusei",
+                    "homepage": "https://twitter.com/akadusei",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Get private object attributes directly, without calling getter methods.",
+            "keywords": [
+                "OOP",
+                "getter"
+            ],
+            "time": "2019-04-17T14:55:52+00:00"
         },
         {
             "name": "grottopress/wordpress-field",
