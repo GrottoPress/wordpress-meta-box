@@ -69,16 +69,16 @@
         },
         {
             "name": "grottopress/form-field",
-            "version": "0.6.5",
+            "version": "0.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrottoPress/form-field.git",
-                "reference": "bc6dfaf0b900d5830ec06a49bbe8fa11cb91c7f3"
+                "reference": "1a8b610d5d6408db1263e1666a75604a234e6cdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrottoPress/form-field/zipball/bc6dfaf0b900d5830ec06a49bbe8fa11cb91c7f3",
-                "reference": "bc6dfaf0b900d5830ec06a49bbe8fa11cb91c7f3",
+                "url": "https://api.github.com/repos/GrottoPress/form-field/zipball/1a8b610d5d6408db1263e1666a75604a234e6cdf",
+                "reference": "1a8b610d5d6408db1263e1666a75604a234e6cdf",
                 "shasum": ""
             },
             "require": {
@@ -115,20 +115,20 @@
                 "Forms",
                 "html"
             ],
-            "time": "2019-04-16T23:15:09+00:00"
+            "time": "2019-04-18T15:14:24+00:00"
         },
         {
             "name": "grottopress/wordpress-field",
-            "version": "0.8.2",
+            "version": "0.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrottoPress/wordpress-field.git",
-                "reference": "c3e9226f1ac61bcd99b3df0819608386a5937d0b"
+                "reference": "c3615d474183e48ffd816c0ab23f9c1c2f469be2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrottoPress/wordpress-field/zipball/c3e9226f1ac61bcd99b3df0819608386a5937d0b",
-                "reference": "c3e9226f1ac61bcd99b3df0819608386a5937d0b",
+                "url": "https://api.github.com/repos/GrottoPress/wordpress-field/zipball/c3615d474183e48ffd816c0ab23f9c1c2f469be2",
+                "reference": "c3615d474183e48ffd816c0ab23f9c1c2f469be2",
                 "shasum": ""
             },
             "require": {
@@ -166,7 +166,7 @@
                 "Forms",
                 "wordpress"
             ],
-            "time": "2019-04-16T23:27:02+00:00"
+            "time": "2019-04-17T16:12:07+00:00"
         }
     ],
     "packages-dev": [
@@ -2179,7 +2179,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v4.2.6",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
@@ -2236,7 +2236,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.2.6",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -2376,7 +2376,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.2.6",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -2429,7 +2429,7 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.2.6",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
@@ -2486,7 +2486,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.2.6",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -2550,7 +2550,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.2.6",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -2716,7 +2716,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.2.6",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -2765,7 +2765,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.2.6",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
