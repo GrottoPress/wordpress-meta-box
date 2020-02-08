@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.4.6] - 2020-02-08
+
+### Added
+- Add support for PHP 7.4
+
+### Fixed
+- Fix deprecation notice in codeception
+
 ## 0.4.5 - 2019-04-18
 
 ### Fixed
