@@ -113,7 +113,7 @@ class MetaBox
             $attr = $this->sanitizeField($attr);
 
             if (!empty($attr['key'])) {
-                $attr['value'] = \get_post_meta($post->ID, $attr['key']);
+                $attr['value'] = \get_post_meta($post->ID, $attr['key']) ?: [];
                 $attr['value'] = (\count($attr['value']) < 2) ?
                     ($attr['value'][0] ?? null) : $attr['value'];
             }
