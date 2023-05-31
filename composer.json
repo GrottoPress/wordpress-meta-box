@@ -26,7 +26,7 @@
   },
   "require": {
     "php": ">=7.0",
-    "grottopress/wordpress-field": "^0.8"
+    "grottopress/wordpress-field": "^1.0"
   },
   "require-dev": {
     "lucatume/function-mocker": "^1.3",
